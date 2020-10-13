@@ -118,8 +118,8 @@ class GoogleAnalyticsPlugin(p.SingletonPlugin):
         if self.googleanalytics_linked_domains:
             self.googleanalytics_fields['allowLinker'] = 'true'
 
-        self.googleanalytics_javascript_url = h.url_for_static(
-                '/scripts/ckanext-googleanalytics.js')
+        # self.googleanalytics_javascript_url = h.url_for_static(
+        #         '/scripts/ckanext-googleanalytics.js')
 
         # If resource_prefix is not in config file then write the default value
         # to the config dict, otherwise templates seem to get 'true' when they
